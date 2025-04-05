@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+// import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
@@ -17,11 +17,11 @@ export function HeroSection() {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
-            <Button asChild>
+            {/* <Button asChild>
               <Link href="/create">
                 Create Your Portal <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button>
+            </Button> */}
             <Button variant="outline" asChild>
               <Link href="#recent">Explore Portals</Link>
             </Button>

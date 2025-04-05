@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { LoginDialog } from "@/components/login-dialog"
+// import { LoginDialog } from "@/components/login-dialog"
 
 export function Header() {
   return (
@@ -8,7 +8,7 @@ export function Header() {
         <Link href="/" className="text-xl font-bold">
           BSO Portal
         </Link>
-        <LoginDialog />
+        {/* <LoginDialog /> */}
       </div>
     </header>
   )
