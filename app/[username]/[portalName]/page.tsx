@@ -322,7 +322,7 @@ export default function PortalPage() {
 
   if (isPrivatePortal && !accessGranted) {
     return (
-      <div className="container mx-auto max-w-md py-12">
+      <div className="container mx-auto  max-w-md py-12">
         <Button variant="ghost" asChild className="mb-4">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
@@ -349,7 +349,7 @@ export default function PortalPage() {
   const isPortalOwner = isOwner(portal.username)
 
   return (
-    <div className="container mx-auto max-w-4xl py-8">
+    <div className="container mx-auto px-3 md:px-0 max-w-4xl py-8">
       <Button variant="ghost" asChild className="mb-4">
         <Link href="/">
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
@@ -360,9 +360,9 @@ export default function PortalPage() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <h1 className="text-3xl font-bold">
-              /{portal.username}/{portal.portalName}
+              /{portal?.username}/{portal?.portalName}
             </h1>
-            {portal.isPrivate && (
+            {portal?.isPrivate && (
               <div className="rounded-full bg-amber-100 px-2 py-1 text-xs font-medium text-amber-800">Private</div>
             )}
           </div>
