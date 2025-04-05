@@ -41,7 +41,7 @@ export function RecentPortals() {
   }, [])
 
   return (
-    <section className="container mx-auto py-12 px-3 md:px-0" id="recent">
+    <section className="container mx-auto py-12 px-3 lg:px-0" id="recent">
       <div className="mb-8 flex items-center justify-between">
         <h2 className="text-2xl font-bold tracking-tight">Recent Public Portals</h2>
         <Link href="/explore" className="text-sm font-medium text-primary hover:underline">
